@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+
+gem 'rack-cors', :require => 'rack/cors'
 gem 'json'
 gem 'httparty'
 gem 'active_model_serializers'
