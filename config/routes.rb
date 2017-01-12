@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
     post '/words' => 'words#create'
 
+    get '/words/search' => 'words#search'
+
     get '/words/:id' => 'words#show'
 
     put '/words/:id' => 'words#update'
