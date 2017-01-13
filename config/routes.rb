@@ -16,5 +16,9 @@ get "/_ah/health" => 'application#health_check'
     put '/words/:id' => 'words#update'
 
     delete '/words/:id' => 'words#destroy'
+
+    get '/languages' => 'languages#index'
+
+    post '/languages' => 'languages#create'
   end
 end

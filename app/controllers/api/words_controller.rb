@@ -5,8 +5,6 @@ class Api::WordsController < ApplicationController
   skip_before_action :verify_authenticity_token, only: [:create]
 
   def index
-    puts "Hello"
-    logger.info "It works"
     @words = Word.all
     render json: @words, status: :ok
   end
