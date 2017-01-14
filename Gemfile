@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+gem 'lograge'
 gem 'rack-cors', :require => 'rack/cors'
 gem 'json'
 gem 'httparty'
