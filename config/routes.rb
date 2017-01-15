@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   root to: 'application#test'
-get "/_ah/health" => 'application#health_check'
+  get "/_ah/health" => 'application#health_check'
 
   namespace :api, :defaults => {:format => :json} do
     root to: 'words#index'

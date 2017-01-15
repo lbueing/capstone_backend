@@ -5,8 +5,7 @@ class ApplicationController < ActionController::Base
 
 
   def test
-    words = Word.all
-    render json: words, status: :ok
+    render json: 'hello world', status: :ok
   end
 
   def health_check
