@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170113190446) do
+ActiveRecord::Schema.define(version: 20170119045829) do
 
   create_table "languages", force: :cascade do |t|
     t.string   "language"
@@ -42,6 +42,7 @@ ActiveRecord::Schema.define(version: 20170113190446) do
     t.binary   "sound_clip"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
+    t.boolean  "sound_present"
   end
 
 end

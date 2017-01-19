@@ -18,6 +18,7 @@ class Api::WordsController < ApplicationController
       word.category = params['category']
       word.language = params['language']
       word.sound_clip = params['sound_clip']
+      word.sound_present = params['sound_present']
       word.save
       if word.save
         render json: word, status: :created
@@ -43,9 +44,11 @@ class Api::WordsController < ApplicationController
   end
 
   def search
+
     words = Word.where(language: params['query'])
     unless words.empty?
-      render json: words, status: :ok
+      render json: { :success => true,
+        :words => words.as_json(:only => [:id, :foreign_word, :english_word, :part_of_speech, :category, :language, :sound_present]) }
     else
       render :json => [], status: :no_content
     end
