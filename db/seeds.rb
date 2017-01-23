@@ -13,7 +13,7 @@ Word.create(created_by: 1, foreign_word: 'balena', english_word: 'whale', part_o
 
 
 Word.create(english_word: 'knife', foreign_word: 'hnífur', part_of_speech: 'noun', category: 'kitchen', language: 'Icelandic', sound_present: false)
-Word.create(english_word: 'fork', foreign_word: 'gafall', part_of_speech: 'noun', category: 'kitchen', language: 'Icelandic', sound_present: false)
+Word.create(english_word: 'fork', foreign_word: 'gaffall', part_of_speech: 'noun', category: 'kitchen', language: 'Icelandic', sound_present: false)
 Word.create(english_word: 'spoon', foreign_word: 'skeið', part_of_speech: 'noun', category: 'kitchen', language: 'Icelandic', sound_present: false)
 Word.create(english_word: 'plate', foreign_word: 'diskur', part_of_speech: 'noun', category: 'kitchen', language: 'Icelandic', sound_present: false)
 Word.create(english_word: 'that', foreign_word: 'það', part_of_speech: 'pronoun', language: 'Icelandic', sound_present: false)
