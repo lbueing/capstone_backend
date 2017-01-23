@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+
   root to: 'application#test'
   get "/_ah/health" => 'application#health_check'
 
@@ -22,10 +23,10 @@ Rails.application.routes.draw do
 
     post '/languages' => 'languages#create'
 
-    get '/part_of_speeches' => 'part_of_speeches#index'
-
     get '/categories' => 'categories#index'
 
     post '/categories' => 'categories#create'
+
+    get '/speeches' => 'speeches#index'
   end
 end
