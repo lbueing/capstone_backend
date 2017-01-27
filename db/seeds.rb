@@ -6,22 +6,22 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Word.create(created_by: 1, foreign_word: 'ombrello', english_word: 'umbrella', part_of_speech: 'noun', category: 'weather', language: 'Italian', sound_present: false)
-Word.create(created_by: 1, foreign_word: 'topo', english_word: 'mouse', part_of_speech: 'noun', category: 'animals', language: 'Italian', sound_present: false)
-Word.create(created_by: 1, foreign_word: 'cane', english_word: 'dog', part_of_speech: 'noun', category: 'animals', language: 'Italian', sound_present: false)
-Word.create(created_by: 1, foreign_word: 'balena', english_word: 'whale', part_of_speech: 'noun', category: 'animals', language: 'Italian', sound_present: false)
-
-
-Word.create(english_word: 'knife', foreign_word: 'hnífur', part_of_speech: 'noun', category: 'kitchen', language: 'Icelandic', sound_present: false)
-Word.create(english_word: 'fork', foreign_word: 'gaffall', part_of_speech: 'noun', category: 'kitchen', language: 'Icelandic', sound_present: false)
-Word.create(english_word: 'spoon', foreign_word: 'skeið', part_of_speech: 'noun', category: 'kitchen', language: 'Icelandic', sound_present: false)
-Word.create(english_word: 'plate', foreign_word: 'diskur', part_of_speech: 'noun', category: 'kitchen', language: 'Icelandic', sound_present: false)
-Word.create(english_word: 'that', foreign_word: 'það', part_of_speech: 'pronoun', language: 'Icelandic', sound_present: false)
-Word.create(english_word: 'not', foreign_word: 'ekki', part_of_speech: 'adverb', language: 'Icelandic', sound_present: false)
-Word.create(english_word: 'to eat', foreign_word: 'að borða', part_of_speech: 'verb', category: 'kitchen', language: 'Icelandic', sound_present: false)
-Word.create(english_word: 'to cook', foreign_word: 'að elda', part_of_speech: 'verb', category: 'kitchen', language: 'Icelandic', sound_present: false)
-Word.create(english_word: 'snow', foreign_word: 'snjór', part_of_speech: 'noun', category: 'weather', language: 'Icelandic', sound_present: false)
-Word.create(english_word: 'to snow', foreign_word: 'að snjóa', part_of_speech: 'verb', category: 'weather', language: 'Icelandic', sound_present: false)
+# Word.create(created_by: 1, foreign_word: 'ombrello', english_word: 'umbrella', part_of_speech: 'noun', category: 'weather', language: 'Italian', sound_present: false)
+# Word.create(created_by: 1, foreign_word: 'topo', english_word: 'mouse', part_of_speech: 'noun', category: 'animals', language: 'Italian', sound_present: false)
+# Word.create(created_by: 1, foreign_word: 'cane', english_word: 'dog', part_of_speech: 'noun', category: 'animals', language: 'Italian', sound_present: false)
+# Word.create(created_by: 1, foreign_word: 'balena', english_word: 'whale', part_of_speech: 'noun', category: 'animals', language: 'Italian', sound_present: false)
+#
+#
+# Word.create(english_word: 'knife', foreign_word: 'hnífur', part_of_speech: 'noun', category: 'kitchen', language: 'Icelandic', sound_present: false)
+# Word.create(english_word: 'fork', foreign_word: 'gaffall', part_of_speech: 'noun', category: 'kitchen', language: 'Icelandic', sound_present: false)
+# Word.create(english_word: 'spoon', foreign_word: 'skeið', part_of_speech: 'noun', category: 'kitchen', language: 'Icelandic', sound_present: false)
+# Word.create(english_word: 'plate', foreign_word: 'diskur', part_of_speech: 'noun', category: 'kitchen', language: 'Icelandic', sound_present: false)
+# Word.create(english_word: 'that', foreign_word: 'það', part_of_speech: 'pronoun', language: 'Icelandic', sound_present: false)
+# Word.create(english_word: 'not', foreign_word: 'ekki', part_of_speech: 'adverb', language: 'Icelandic', sound_present: false)
+# Word.create(english_word: 'to eat', foreign_word: 'að borða', part_of_speech: 'verb', category: 'kitchen', language: 'Icelandic', sound_present: false)
+# Word.create(english_word: 'to cook', foreign_word: 'að elda', part_of_speech: 'verb', category: 'kitchen', language: 'Icelandic', sound_present: false)
+# Word.create(english_word: 'snow', foreign_word: 'snjór', part_of_speech: 'noun', category: 'weather', language: 'Icelandic', sound_present: false)
+# Word.create(english_word: 'to snow', foreign_word: 'að snjóa', part_of_speech: 'verb', category: 'weather', language: 'Icelandic', sound_present: false)
 
 
 Language.create(language: 'Spanish')
@@ -76,6 +76,7 @@ Category.create(category: 'greetings')
 Category.create(category: 'weather')
 Category.create(category: 'kitchen')
 Category.create(category: 'clothing')
+Category.create(category: 'animals')
 
 Speech.create(part_of_speech: 'noun')
 Speech.create(part_of_speech: 'pronoun')
